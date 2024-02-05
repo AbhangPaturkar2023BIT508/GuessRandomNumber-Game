@@ -1,0 +1,62 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess My Number Game...</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container_wrapper">
+        <button
+          type="button"
+          class="button btn_play_again"
+          style="border-radius: 20px"
+        >
+          Play Again
+        </button>
+        <p>
+          Level : <span id="Level">100</span>&nbsp;&nbsp;&nbsp;Round :
+          <span id="round">100</span>
+        </p>
+      </div>
+      <hr style="height: 2px; color: aqua; margin-top: 2rem" />
+      <h2>Wel-Come to Guess My Number Game</h2>
+      <p class="range">Between 1 to <span id="high_range">100</span></p>
+      <form class="form">
+        <input type="number" placeholder="?" class="user_guess_input" />
+        <div class="number_info">
+          <p>
+            YOUR GUESS IS <span id="num_info"><b>MATCH</b></span>
+          </p>
+        </div>
+        <button
+          style="
+            text-align: center;
+            position: relative;
+            width: 100%;
+            border-width: 1px 0 0 0;
+          "
+          type="button"
+          class="button btn_check_guess"
+        >
+          Check Guess
+        </button>
+      </form>
+      <div class="score_info">
+        <p>
+          Current Score :
+          <b
+            ><span class="curr_score" style="color: rgb(3, 206, 24)"
+              >&nbsp20</span
+            ></b
+          >
+        </p>
+        <p>
+          High Score &nbsp&nbsp&nbsp&nbsp&nbsp:
+          <b><span class="high_score" style="color: red">&nbsp120</span></b>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.container {
+  max-width: 850px;
+  width: 100%;
+  box-shadow: 0 0 spx 1px rgba(8, 8, 8, 0.705);
+  padding: 2rem;
+  color: #fdfdfd;
+  border-radius: 10px;
+  background-color: #000000b0;
+  transition: all 0.6s ease-in;
+}
+
+hr {
+  position: relative;
+  top: 5px;
+  border: none;
+  height: 12px;
+  background: rgb(255, 255, 255);
+  margin-bottom: 30px;
+}
+
+.container_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .button {
+  border: none;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  outline: none;
+  font-size: 0.9rem;
+  background-color: #cb3050;
+  border-radius: 4px;
+  color: #fff;
+  font-family: inherit;
+}
+
+.container .button:focus {
+  transform: scale(0.98);
+  outline: none;
+}
+
+.container h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+
+.container .range {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 1rem 0;
+}
+
+.user_guess_input {
+  text-align: center;
+  font-size: 3rem;
+  background-color: #7fe08598;
+  border-radius: 4px;
+  width: 100%;
+}
+.form {
+  margin: 0 auto;
+  width: 250px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.number_info {
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 1rem 0;
+}
+
+.btn_check_guess {
+  align-items: center;
+}
+
+.score_info {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+}
