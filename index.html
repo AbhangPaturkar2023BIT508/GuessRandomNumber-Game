@@ -16,18 +16,28 @@
           Play Again
         </button>
         <p>
-          Level : <span id="Level">100</span>&nbsp;&nbsp;&nbsp;Round :
-          <span id="round">100</span>
+          Level : <span id="level"></span>&nbsp;&nbsp;&nbsp;Round :
+          <span id="round"></span>
         </p>
       </div>
       <hr style="height: 2px; color: aqua; margin-top: 2rem" />
       <h2>Wel-Come to Guess My Number Game</h2>
-      <p class="range">Between 1 to <span id="high_range">100</span></p>
+      <p class="range">
+        Between 1 to <i><b><span id="high_range"></span></b></i><br /><b
+          ><i style="font-size: 0.9rem; color: red"
+            >Attempt Left : <span id="attempt"></span></i></b
+        ><br /><span style="font-size: 1.1rem">-- Enter Your Guess --</span>
+      </p>
       <form class="form">
-        <input type="number" placeholder="?" class="user_guess_input" />
+        <input
+          type="number"
+          placeholder="?"
+          id="userGuess"
+          class="user_guess_input"
+        
+        />
         <div class="number_info">
-          <p>
-            YOUR GUESS IS <span id="num_info"><b>MATCH</b></span>
+          <p id="num_info"></span>
           </p>
         </div>
         <button
@@ -37,6 +47,7 @@
             width: 100%;
             border-width: 1px 0 0 0;
           "
+          
           type="button"
           class="button btn_check_guess"
         >
@@ -47,16 +58,17 @@
         <p>
           Current Score :
           <b
-            ><span class="curr_score" style="color: rgb(3, 206, 24)"
-              >&nbsp20</span
+            ><span class="curr_score" id="curr_score" style="color: rgb(3, 206, 24)"
+              >&nbsp</span
             ></b
           >
         </p>
         <p>
           High Score &nbsp&nbsp&nbsp&nbsp&nbsp:
-          <b><span class="high_score" style="color: red">&nbsp120</span></b>
+          <b><span class="high_score" id="high_score" style="color: red">&nbsp</span></b>
         </p>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
