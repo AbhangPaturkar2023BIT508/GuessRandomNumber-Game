@@ -68,7 +68,7 @@ function GuessRandomNumber() {
     } else if (userGuess < numberToGuess) {
       document.getElementById(
         "num_info"
-      ).textContent = `Your guess is too low.${numberToGuess}`;
+      ).textContent = `Your guess is too low.`;
       attempts--; // Decrease attempts if user guess is incorrect
     } else {
       document.getElementById("num_info").textContent =
